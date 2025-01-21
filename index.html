@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="font-bold text-xl">Desserts</h1>
+    <section class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-2">
+      <article id="productos" class="">
+        <figure>
+          <picture>
+            <!-- imagen para desktop -->
+            <source srcset="assets/images/image-waffle-desktop.jpg " media="(min-width: 1024px)">
+            <!-- imagen para tablet -->
+            <source srcset="assets/images/image-waffle-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+            <!-- imagen para mobile -->
+             <source srcset="assets/images/image-waffle-mobile.jpg" media="(max-width: 767px)">
+             <!-- imagen para la miniatura -->
+            <img src="assets/images/image-waffle-thumbnail.jpg" alt="postre">
+          </picture>
+          <figcaption>
+            <h3 class="product-category"></h3>
+            <p class="product-name"></p>
+            <p class="product-price"></p>
+        </figure>
+      </article>
+      <article id="productos" class="">
+        <figure>
+          <picture>
+            <source srcset="assets/images/image-creme-brulee-desktop.jpg" media="(min-width: 1024px)">
+            <source srcset="assets/images/image-creme-brulee-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="assets/images/image-creme-brulee-mobile.jpg" media="(max-width: 767px)">
+            <img src="assets/images/image-creme-brulee-thumbnail.jpg" alt="creme Brûlée">
+          </picture>
+          <figcaption>
+            <h3 class="product-category"></h3>
+            <p class="product-name"></p>
+            <p class="product-price"></p>
+        </figure>
+      </article>
+      <article id="productos" class="">
+        <figure>
+          <picture>
+            <!-- imagen para desktop -->
+             <source srcset="assets/images/image-macaron-desktop.jpg" media="(min-width: 1024px)">
+             <!-- imagen para tablet -->
+              <source srcset="assets/images/image-macaron-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+              <!-- img for mobile -->
+               <source srcset="assets/images/image-macaron-mobile.jpg" media="(max-width: 767px)">  
+                <!-- imagen para la miniatura -->
+                 <img src="assets/images/image-macaron-thumbnail.jpg" alt="">
+          </picture>
+          <figcaption>
+            <h3 class="product-category"></h3>
+            <p class="product-name"></p>
+            <p class="product-price"></p>
+        </figure>
+      </article>
+      <article id="productos" class="">
+        <figure>
+          <picture>
+            <source srcset="assests/images/image-tiramisu-desktop.jpg" media="(min-width: 1024px)">
+            <source srcset="assests/images/image-tiramisu-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="assests/images/image-tiramisu-mobile.jpg" media="(max-width: 767px)">
+            <img src="assets/images/image-tiramisu-thumbnail.jpg" alt="tiramisu">
+          </picture>
+          <figcaption>
+            <h3 class="product-category"></h3>
+            <p class="product-name"></p>
+            <p class="product-price"></p>
+        </figure>
+      </article>
+      <article id="productos" class="">
+        <figure>
+          <picture>
+            <source srcset="assests/images/image-baklava-desktop.jpg" media="(min-width: 1024px)">
+            <source srcset="assests/images/image-baklava-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="assests/images/image-baklava-mobile.jpg" media="(max-width: 767px)">
+            <img src="assets/images/image-baklava-thumbnail.jpg" alt="baklava">
+          </picture>
+          <figcaption>
+            <h3 class="product-category"></h3>
+            <p class="product-name"></p>
+            <p class="product-price"></p>
+        </figure>
+      </article>
+      <article id="productos" class="">
+        <figure>
+          <picture>
+            <source srcset="assests/images/image-meringue-desktop.jpg" media="(min-width: 1024px)">
+            <source srcset="assests/images/image-meringue-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="assests/images/image-meringue-mobile.jpg" media="(max-width: 767px)">
+            <img src="assets/images/image-meringue-thumbnail.jpg" alt="pie">
+          </picture>
+          <figcaption>
+            <h3 class="product-category"></h3>
+            <p class="product-name"></p>
+            <p class="product-price"></p>
+        </figure>
+      </article>
+      <article id="productos" class="">
+        <figure>
+          <picture>
+            <source srcset="assests/images/image-cake-desktop.jpg" media="(min-width: 1024px)">
+            <source srcset="assests/images/image-cake-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="assests/images/image-cake-mobile.jpg" media="(max-width: 767px)">
+            <img src="assets/images/image-cake-thumbnail.jpg" alt="red velvet">
+          </picture>
+          <figcaption>
+            <h3 class="product-category"></h3>
+            <p class="product-name"></p>
+            <p class="product-price"></p>
+        </figure>
+      </article>
+      <article id="productos" class="">
+        <figure>
+          <picture>
+            <source srcset="assests/images/image-brownie-desktop.jpg" media="(min-width: 1024px)">
+            <source srcset="assets/images/image-brownie-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="assests/images/image-brownie-mobile.jpg" media="(max-width: 767px)">
+            <img src="assets/images/image-brownie-thumbnail.jpg" alt="">
+          </picture>
+          <figcaption>
+            <h3 class="product-category"></h3>
+            <p class="product-name"></p>
+            <p class="product-price"></p>
+        </figure>
+        
+      </article>
+      <article id="productos" class="">
+        <figure>
+          <picture>
+            <source srcset="assests/images/image-panna-cotta-desktop.jpg" media="(min-width: 1024px)">
+            <source srcset="assests/images/image-panna-cotta-tablet.jpg" media="(min-width: 768px) and (max-width: 1023px)">
+            <source srcset="assests/images/image-panna-cotta-mobile.jpg" media="(max-width: 767px)">
+            <img src="assets/images/image-panna-cotta-thumbnail.jpg" alt="panna cotta">
+          </picture>
+          <figcaption>
+            <h3 class="product-category"></h3>
+            <p class="product-name"></p>
+            <p class="product-price"></p>
+        </figure>
+    </section>
+  </main>
+  <section>
+
+  </section>
+
+  
+
+  
+  <!-- Waffle
+  6.50
+  Add to Cart
+
+  Vanilla Bean Crème Brûlée
+  Crème Brûlée
+  7.00
+  Add to Cart
+
+  Macaron Mix of Five
+  Macaron
+  8.00
+  Add to Cart
+
+  Classic Tiramisu
+  Tiramisu
+  5.50
+  Add to Cart
+
+  Pistachio Baklava
+  Baklava
+  4.00
+  Add to Cart
+
+  Lemon Meringue Pie
+  Pie
+  5.00
+  Add to Cart
+
+  Red Velvet Cake
+  Cake
+  4.50
+  Add to Cart
+
+  Salted Caramel Brownie
+  Brownie
+  4.50
+  Add to Cart
+
+  Vanilla Panna Cotta
+  Panna Cotta
+  6.50
+  Add to Cart
+  -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Evelin Bellido</a>.
+  </div>
+  <!-- <script src="scripts.js"></script> -->
+</body>
+</html>
